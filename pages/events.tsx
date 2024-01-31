@@ -12,7 +12,7 @@ const EventsSection: React.FC = () => {
                 <title>TISBZephyr</title>
                 <meta name="description" content="TISBZephyr" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/images/zephyr logo.png" />
+                <link rel="icon" href="./images/zephyr logo.png" />
             </Head>
             <div className="w-screen h-full bg-primary" >
                 <Navbar />

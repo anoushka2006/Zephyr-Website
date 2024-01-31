@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div className="w-full h-[10vh] border-b border-white/[.13] border-solid flex justify-between items-center fixed z-20 bg-primary">
       <img
-        src="/images/zephyr_logo.png"
+        src="./images/zephyr_logo.png"
         alt="Logo"
         width={100}
         height={100}
