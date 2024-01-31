@@ -189,7 +189,7 @@ export default function Home() {
 							/>
 							<Theme
 								theme="Wellness Verse"
-								image='url("./images/poetry_resized.jpg")'
+								image="./images/poetry_resized.jpg"
 							/>
 						</div>
 					</div>
@@ -243,7 +243,7 @@ export default function Home() {
 							About Us
 						</h1>
 						<div className="flex flex-col items-start justify-center w-full h-auto gap-4 ">
-							<MainEvent {...aboutus} image='/images/zephyr_logo.png'/>
+							<MainEvent {...aboutus} image='./images/zephyr_logo.png'/>
 						</div>
 					</div>
 				</div>
