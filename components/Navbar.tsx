@@ -15,14 +15,14 @@ const Navbar = () => {
 
         className="ml-4 cursor-pointer w-30 h-30"
         onClick={async () => {
-          router.pathname !== "/" && (await router.push("/"));
+          router.pathname !== "/index" && (await router.push("/index"));
           document.body.scrollIntoView({ behavior: "smooth", block: "start" });
         }}
       />
       <div className="flex items-center justify-center gap-8">
         <p
           onClick={async () => {
-            router.pathname !== "/" && (await router.push("/"));
+            router.pathname !== "/index" && (await router.push("/index"));
             document.body.scrollIntoView({
               behavior: "smooth",
               block: "start",
@@ -35,7 +35,7 @@ const Navbar = () => {
         <Link href="/events">
           <p
             onClick={async () => {
-              // router.pathname !== "/" && (await router.push("/"));
+              // router.pathname !== "/index" && (await router.push("/index"));
               // let element = document.getElementById("events");
               // element?.scrollIntoView({ behavior: "smooth", block: "start" });
             }}
@@ -46,7 +46,7 @@ const Navbar = () => {
         </Link>
         <p
           onClick={async () => {
-            router.pathname !== "/" && (await router.push("/"));
+            router.pathname !== "/index" && (await router.push("/index"));
             let element = document.getElementById("themes");
             element?.scrollIntoView({ behavior: "smooth", block: "start" });
           }}
@@ -56,7 +56,7 @@ const Navbar = () => {
         </p>
         <p
           onClick={async () => {
-            router.pathname !== "/" && (await router.push("/"));
+            router.pathname !== "/index" && (await router.push("/index"));
             let element = document.getElementById("prizes");
             element?.scrollIntoView({ behavior: "smooth", block: "start" });
           }}
@@ -66,7 +66,7 @@ const Navbar = () => {
         </p>
         {/* <p
           onClick={async () => {
-            router.pathname !== "/" && (await router.push("/"));
+            router.pathname !== "/index" && (await router.push("/index"));
             let element = document.getElementById("faqs");
             element?.scrollIntoView({ behavior: "smooth", block: "start" });
           }}
@@ -76,7 +76,7 @@ const Navbar = () => {
         </p> */}
         {/* <p
           onClick={async () => {
-            router.pathname !== "/" && (await router.push("/"));
+            router.pathname !== "/index" && (await router.push("/index"));
             let element = document.getElementById("sponsors");
             element?.scrollIntoView({ behavior: "smooth", block: "start" });
           }}
@@ -86,7 +86,7 @@ const Navbar = () => {
         </p> */}
         <p
           onClick={async () => {
-            router.pathname !== "/" && (await router.push("/"));
+            router.pathname !== "/index" && (await router.push("/index"));
             let element = document.getElementById("aboutus");
             element?.scrollIntoView({ behavior: "smooth", block: "start" });
           }}
