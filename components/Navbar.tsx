@@ -34,11 +34,11 @@ const Navbar = () => {
         </p>
         <Link href="/events">
           <p
-            onClick={async () => {
-              // router.pathname !== "/index" && (await router.push("/index"));
-              // let element = document.getElementById("events");
-              // element?.scrollIntoView({ behavior: "smooth", block: "start" });
-            }}
+            // onClick={async () => {
+            //   router.pathname !== "/index" && (await router.push("/index"));
+            //   let element = document.getElementById("events");
+            //   element?.scrollIntoView({ behavior: "smooth", block: "start" });
+            // }}
             className="hidden text-white cursor-pointer select-none sm:block"
           >
             Events
@@ -46,9 +46,9 @@ const Navbar = () => {
         </Link>
         <p
           onClick={async () => {
-            router.pathname !== "/index" && (await router.push("/index"));
-            let element = document.getElementById("themes");
-            element?.scrollIntoView({ behavior: "smooth", block: "start" });
+            router.pathname !== "/index#themes" && (await router.push("/index#themes"));
+            // let element = document.getElementById("themes");
+            // element?.scrollIntoView({ behavior: "smooth", block: "start" });
           }}
           className="hidden text-white cursor-pointer select-none sm:block"
         >
@@ -56,9 +56,9 @@ const Navbar = () => {
         </p>
         <p
           onClick={async () => {
-            router.pathname !== "/index" && (await router.push("/index"));
-            let element = document.getElementById("prizes");
-            element?.scrollIntoView({ behavior: "smooth", block: "start" });
+            router.pathname !== "/index#prizes" && (await router.push("/index#prizes"));
+            // let element = document.getElementById("prizes");
+            // element?.scrollIntoView({ behavior: "smooth", block: "start" });
           }}
           className="hidden text-white cursor-pointer select-none sm:block"
         >
@@ -86,7 +86,7 @@ const Navbar = () => {
         </p> */}
         <p
           onClick={async () => {
-            router.pathname !== "/index" && (await router.push("/index"));
+            router.pathname !== "/index#aboutus" && (await router.push("/index#aboutus"));
             let element = document.getElementById("aboutus");
             element?.scrollIntoView({ behavior: "smooth", block: "start" });
           }}
