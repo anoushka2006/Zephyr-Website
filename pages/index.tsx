@@ -189,7 +189,7 @@ export default function Home() {
 							/>
 							<Theme
 								theme="Wellness Verse"
-								image='url("./images/standup.png")'
+								image='url("./images/poetry.jpg")'
 							/>
 						</div>
 					</div>
