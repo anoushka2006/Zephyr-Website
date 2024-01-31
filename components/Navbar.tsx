@@ -35,9 +35,9 @@ const Navbar = () => {
         <Link href="/events">
           <p
             onClick={async () => {
-              router.pathname !== "/" && (await router.push("/"));
-              let element = document.getElementById("events");
-              element?.scrollIntoView({ behavior: "smooth", block: "start" });
+              // router.pathname !== "/" && (await router.push("/"));
+              // let element = document.getElementById("events");
+              // element?.scrollIntoView({ behavior: "smooth", block: "start" });
             }}
             className="hidden text-white cursor-pointer select-none sm:block"
           >

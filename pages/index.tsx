@@ -14,66 +14,66 @@ import { aboutus, event1, event2, event3, event4, event5 } from "../components/M
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-	const faqs: FAQProps[] = [
-		{
-			faqVal: FAQEnum.Q1,
-			question: "What are the benefits of participating?",
-			answer:
-				"Learn new skills, add a nation-wide event to your Resume, network with the best programmers in India, and win cash prizes worth Rs. 100,000. All while meeting great people, having great food, and having great fun!",
-		},
-		{
-			faqVal: FAQEnum.Q2,
-			question: "Is there support available?",
-			answer:
-				"The environment at these events is designed specifically to encourage everyone to have fun and help each other. If you’re ever stuck on anything, speak to a volunteer or a HOD who will help you. The primary purpose of the hackathon is to learn, so don’t be afraid to ask!",
-		},
-		{
-			faqVal: FAQEnum.Q3,
-			question: "Do you need coding experience to participate?",
-			answer:
-				"No! If you’re new to programming, feel free to participate in the UI Development Category.",
-		},
-		{
-			faqVal: FAQEnum.Q4,
-			question: "Is the hackathon open to anyone?",
-			answer:
-				"We have two categories; one for ages 10-13 and another for ages 13-18.",
-		},
-		{
-			faqVal: FAQEnum.Q6,
-			question:
-				"I have another question that is not answered in your FAQs, what should I do?",
-			answer: "Please contact us at zephyr@tisb.ac.in for further queries.",
-		},
-		{
-			faqVal: FAQEnum.Q7,
-			question: "What about confidentiality of information?",
-			answer:
-				"If you don’t want to distribute your code base that is ok, if you don’t want to present your project, then a hackathon might not be the ideal place for you to work on that idea. We will take photos at the event and you will sign a document that allows us to use those pictures for social media. So if you don’t want to be on any pictures please tell us beforehand!",
-		},
-		{
-			faqVal: FAQEnum.Q8,
-			question: "Do all team members need to be present?",
-			answer:
-				"Yes, every team member should be present. If a team member cannot be present during the pitch or can only come later please tell us and we will find a way to manage!",
-		},
-		{
-			faqVal: FAQEnum.Q9,
-			question: "What is the Program/Timetable?",
-			answer: "The schedule of events will be announced soon!",
-		},
-		{
-			faqVal: FAQEnum.Q13,
-			question: "How are the winners selected?",
-			answer: (
-				<>
-					There will be an independent Jury comprised of experienced judges
-					selecting the winners with a rating system. The judging criteria will
-					be shared soon!
-				</>
-			),
-		},
-	];
+	// const faqs: FAQProps[] = [
+	// 	{
+	// 		faqVal: FAQEnum.Q1,
+	// 		question: "What are the benefits of participating?",
+	// 		answer:
+	// 			"Learn new skills, add a nation-wide event to your Resume, network with the best programmers in India, and win cash prizes worth Rs. 100,000. All while meeting great people, having great food, and having great fun!",
+	// 	},
+	// 	{
+	// 		faqVal: FAQEnum.Q2,
+	// 		question: "Is there support available?",
+	// 		answer:
+	// 			"The environment at these events is designed specifically to encourage everyone to have fun and help each other. If you’re ever stuck on anything, speak to a volunteer or a HOD who will help you. The primary purpose of the hackathon is to learn, so don’t be afraid to ask!",
+	// 	},
+	// 	{
+	// 		faqVal: FAQEnum.Q3,
+	// 		question: "Do you need coding experience to participate?",
+	// 		answer:
+	// 			"No! If you’re new to programming, feel free to participate in the UI Development Category.",
+	// 	},
+	// 	{
+	// 		faqVal: FAQEnum.Q4,
+	// 		question: "Is the hackathon open to anyone?",
+	// 		answer:
+	// 			"We have two categories; one for ages 10-13 and another for ages 13-18.",
+	// 	},
+	// 	{
+	// 		faqVal: FAQEnum.Q6,
+	// 		question:
+	// 			"I have another question that is not answered in your FAQs, what should I do?",
+	// 		answer: "Please contact us at zephyr@tisb.ac.in for further queries.",
+	// 	},
+	// 	{
+	// 		faqVal: FAQEnum.Q7,
+	// 		question: "What about confidentiality of information?",
+	// 		answer:
+	// 			"If you don’t want to distribute your code base that is ok, if you don’t want to present your project, then a hackathon might not be the ideal place for you to work on that idea. We will take photos at the event and you will sign a document that allows us to use those pictures for social media. So if you don’t want to be on any pictures please tell us beforehand!",
+	// 	},
+	// 	{
+	// 		faqVal: FAQEnum.Q8,
+	// 		question: "Do all team members need to be present?",
+	// 		answer:
+	// 			"Yes, every team member should be present. If a team member cannot be present during the pitch or can only come later please tell us and we will find a way to manage!",
+	// 	},
+	// 	{
+	// 		faqVal: FAQEnum.Q9,
+	// 		question: "What is the Program/Timetable?",
+	// 		answer: "The schedule of events will be announced soon!",
+	// 	},
+	// 	{
+	// 		faqVal: FAQEnum.Q13,
+	// 		question: "How are the winners selected?",
+	// 		answer: (
+	// 			<>
+	// 				There will be an independent Jury comprised of experienced judges
+	// 				selecting the winners with a rating system. The judging criteria will
+	// 				be shared soon!
+	// 			</>
+	// 		),
+	// 	},
+	// ];
 
 	const [faq, setFaq] = useState<FAQEnum>(FAQEnum.NONE);
 
@@ -83,7 +83,7 @@ export default function Home() {
 				<title>TISBZephyr</title>
 				<meta name="description" content="TISBZephyr" />
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
-				<link rel="icon" href="./mental-health-website/zephyr logo.png" />
+				<link rel="icon" href="./images/zephyr logo.png" />
 			</Head>
 			<div className="w-screen h-full bg-primary">
 				<Navbar />
@@ -91,7 +91,7 @@ export default function Home() {
 				<div className="flex items-start justify-center w-full h-full">
 					<div className="flex flex-col items-center justify-start w-full h-[87vh] mt-[13vh] mx-6 sm:mx-8">
 						<div
-							style={{ backgroundImage: 'url("./mental-health-website/Venomous Jungle.jpeg")' }}
+							style={{ backgroundImage: 'url("./images/Venomous Jungle.jpeg")' }}
 							className="flex justify-center items-center flex-col w-full h-[97%] bg-cover rounded-[2rem] grayscale-[60%]"
 						// className="w-full h-[82%] mb-[4%] sm:h-[54%] sm:mb-[1%] flex flex-col justify-center items-center rounded-[2rem] grayscale-[50%] bg-cover"
 						>
@@ -175,21 +175,21 @@ export default function Home() {
 							Themes
 						</h1>
 						<div className="flex flex-row items-center justify-center w-full h-72 gap-4">
-							<Theme theme="Make a Move" image='url("./mental-health-website/dance_resized.jpg")' />
-							<Theme theme="Sounds Good" image='url("./music.jpg")' />
+							<Theme theme="Make a Move" image='url("./images/dance_resized.jpg")' />
+							<Theme theme="Sounds Good" image='url("./images/music.jpg")' />
 							<Theme
 								theme="Connect 4"
-								image='url("./mental-health-website/comic_resized.jpeg")'
+								image='url("./images/comic_resized.jpeg")'
 							/>
 						</div>
 						<div className="mt-4 flex flex-row items-center justify-center w-full h-72 gap-4">
 							<Theme
 								theme="Take a Stand"
-								image='url("./mental-health-website/standup.png")'
+								image='url("./images/standup.png")'
 							/>
 							<Theme
 								theme="Wellness Verse"
-								image='url("./mental-health-website/poetry_resized.jpg")'
+								image='url("./images/poetry_resized.jpg")'
 							/>
 						</div>
 					</div>
