@@ -83,7 +83,7 @@ export default function Home() {
 				<title>TISBZephyr</title>
 				<meta name="description" content="TISBZephyr" />
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
-				<link rel="icon" href="./images/zephyr logo.png" />
+				<link rel="icon" href="./mental-health-website/zephyr logo.png" />
 			</Head>
 			<div className="w-screen h-full bg-primary">
 				<Navbar />
@@ -91,7 +91,7 @@ export default function Home() {
 				<div className="flex items-start justify-center w-full h-full">
 					<div className="flex flex-col items-center justify-start w-full h-[87vh] mt-[13vh] mx-6 sm:mx-8">
 						<div
-							style={{ backgroundImage: 'url("./images/Venomous Jungle.jpeg")' }}
+							style={{ backgroundImage: 'url("./mental-health-website/Venomous Jungle.jpeg")' }}
 							className="flex justify-center items-center flex-col w-full h-[97%] bg-cover rounded-[2rem] grayscale-[60%]"
 						// className="w-full h-[82%] mb-[4%] sm:h-[54%] sm:mb-[1%] flex flex-col justify-center items-center rounded-[2rem] grayscale-[50%] bg-cover"
 						>
@@ -175,21 +175,21 @@ export default function Home() {
 							Themes
 						</h1>
 						<div className="flex flex-row items-center justify-center w-full h-72 gap-4">
-							<Theme theme="Make a Move" image='url("./images/dance_resized.jpg")' />
+							<Theme theme="Make a Move" image='url("./mental-health-website/dance_resized.jpg")' />
 							<Theme theme="Sounds Good" image='url("./music.jpg")' />
 							<Theme
 								theme="Connect 4"
-								image='url("./images/comic_resized.jpeg")'
+								image='url("./mental-health-website/comic_resized.jpeg")'
 							/>
 						</div>
 						<div className="mt-4 flex flex-row items-center justify-center w-full h-72 gap-4">
 							<Theme
 								theme="Take a Stand"
-								image='url("./images/standup.png")'
+								image='url("./mental-health-website/standup.png")'
 							/>
 							<Theme
 								theme="Wellness Verse"
-								image='url("./images/poetry_resized.jpg")'
+								image='url("./mental-health-website/poetry_resized.jpg")'
 							/>
 						</div>
 					</div>
