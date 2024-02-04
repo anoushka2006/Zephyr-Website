@@ -172,7 +172,7 @@ export default function Home() {
 				<div className="sm:flex w-screen h-auto bg-primary mt-16 hidden">
 					<div className="flex flex-col items-center justify-center w-full h-auto px-6 sm:px-8">
 						<h1 className="w-full mb-8 text-6xl font-semibold text-left">
-							Themes
+							Events
 						</h1>
 						<div className="flex flex-row items-center justify-center w-full h-72 gap-4">
 							<Theme theme="Make a Move" image='url("./images/dance_resized.jpg")' />
