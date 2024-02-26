@@ -243,15 +243,67 @@ export default function Home() {
 							About Us
 						</h1>
 						<div className="flex flex-col items-start justify-center w-full h-auto gap-4 ">
-							<MainEvent {...aboutus} image='./images/zephyr_logo.png'/>
+							<MainEvent {...aboutus} image='./images/zephyr_logo.png' />
 						</div>
 					</div>
 				</div>
 
 
+				<h3 className="mt-16 mb-8 text-4xl font-semibold ml-8" id="sponsors">
+					Sponsors
+				</h3>
+
+				<div className="flex flex-col items-start justify-start gap-8 ml-8">
+					<div className="flex flex-col items-start justify-start w-full gap-8 sm:flex-row">
+							<div className="w-52 h-28 bg-white rounded-lg overflow-hidden">
+							<img
+								src="./images/sponsor1.jpg"
+								alt="bren"
+								className="object-cover h-full w-full"
+							/>
+						</div>
+						<div className="w-52 h-28 bg-white rounded-lg overflow-hidden">
+							<img
+								src="./images/sponsor2.jpg"
+								alt="bren"
+								className="object-cover h-full w-full"
+							/>
+						</div>
+					</div>					
+						<div className="w-52 h-28 bg-white rounded-lg overflow-hidden">
+							<img
+								src="./images/sponsor3.jpg"
+								alt="bren"
+								className="object-cover h-full w-full"
+							/>
+						</div>
+					{/* <div className="flex items-start justify-start w-full gap-8">
+						<div className="bg-black rounded-lg overflow-hidden">
+							<img
+								src="./images/OFG logo-01.jpg"
+								alt="OFG"
+								width={152}
+								height={78}
+							// style={{ objectFit: 'contain' }}
+							/>
+						</div>
+						<div className="bg-gray rounded-lg overflow-hidden">
+							<img
+								src="./images/talentfolks_logo.jpg"
+								alt="Talent Folks"
+								width={182}
+								height={78}
+							// style={{ objectFit: 'contain' }}
+							/>
+						</div>
+					</div> */}
+				</div>
+
+
+
 
 				{/* FAQs */}
-				<div className="relative bottom-20" id="faqs"></div>
+				{/* <div className="relative bottom-20" id="faqs"></div> */}
 				{/* <div className="flex items-start justify-between w-screen h-auto bg-primary mt-8">
 					<div className="flex flex-col w-full items-start justify-start p-8">
 						<h1 className="mb-8 text-6xl w-full text-center sm:text-left font-semibold">
@@ -389,7 +441,7 @@ export const MainEvent = ({
 }: {
 	title: string;
 	description: string;
-	image:string
+	image: string
 }) => {
 	return (
 		<motion.div
