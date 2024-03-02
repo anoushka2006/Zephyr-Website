@@ -9,7 +9,7 @@ import FAQ, { FAQEnum, FAQProps } from "@/components/FAQ";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 import router from "next/router";
 import Theme from "@/components/Theme";
-import { aboutus, event1, event2, event3, event4, event5 } from "../components/MainEventtexxt"; // Assuming you have a component named MainEvent
+import { aboutus, event1, event2, event3, event4, event5, guestSpeaker1, guestSpeaker2, guestSpeaker3 } from "../components/MainEventtexxt"; // Assuming you have a component named MainEvent
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -236,6 +236,21 @@ export default function Home() {
 					</div>
 				</div>
 
+				{/* Guest speaker profiles */}
+				<div className="flex w-screen h-auto bg-primary " id="events">
+					<div className="flex flex-col items-center justify-center w-full h-auto px-6 sm:px-8 ">
+						<h1 className="w-full mb-8 mt-16 text-6xl font-semibold text-center sm:text-left">
+                            Guest Speakers
+                        </h1>
+						                        <div className="flex flex-col items-start justify-center w-full h-auto gap-4">
+
+						<MainEvent title={guestSpeaker1.title} description={guestSpeaker1.description} image='./images/speaker1.jpg' />
+						<MainEvent title={guestSpeaker2.title} description={guestSpeaker2.description} image='./images/Ahuja.jpg' />
+
+						<MainEvent title={guestSpeaker3.title} description={guestSpeaker3.description} image='./images/speaker3.jpg' />
+					</div>
+					</div>
+				</div>
 				{/* about us */}
 				<div className="flex w-screen h-auto bg-primary mt-16" id="aboutus">
 					<div className="flex flex-col items-center justify-center w-full h-auto px-6 sm:px-8">
@@ -255,7 +270,7 @@ export default function Home() {
 
 				<div className="flex flex-col items-start justify-start gap-8 ml-8">
 					<div className="flex flex-col items-start justify-start w-full gap-8 sm:flex-row">
-							<div className="w-52 h-28 bg-white rounded-lg overflow-hidden">
+						<div className="w-52 h-28 bg-white rounded-lg overflow-hidden">
 							<img
 								src="./images/sponsor1.jpg"
 								alt="bren"
@@ -269,14 +284,14 @@ export default function Home() {
 								className="object-cover h-full w-full"
 							/>
 						</div>
-					</div>					
-						<div className="w-52 h-28 bg-white rounded-lg overflow-hidden">
-							<img
-								src="./images/sponsor3.jpg"
-								alt="bren"
-								className="object-cover h-full w-full"
-							/>
-						</div>
+					</div>
+					<div className="w-52 h-28 bg-white rounded-lg overflow-hidden">
+						<img
+							src="./images/sponsor3.jpg"
+							alt="bren"
+							className="object-cover h-full w-full"
+						/>
+					</div>
 					<div className="flex items-start justify-start w-full gap-8">
 						<div className="bg-black rounded-lg overflow-hidden">
 							<img
@@ -463,5 +478,17 @@ export const MainEvent = ({
 				className="hidden sm:block w-[40%]"
 			/>
 		</motion.div>
+	);
+};
+
+
+export const ImageWithText = ({ imageSrc, text }: { imageSrc: string; text: string }) => {
+	return (
+		<div className="w-full flex flex-col items-center justify-center bg-gray py-8">
+			<div className="w-full max-w-screen-lg flex flex-col md:flex-row items-center justify-center md:justify-between px-8">
+				<img src={imageSrc} alt="Image" className="w-full md:w-1/2 max-w-md rounded-lg shadow-lg mb-4 md:mb-0" />
+				<p className="w-full md:w-1/2 md:ml-8 text-lg md:text-xl text-center md:text-left">{text}</p>
+			</div>
+		</div>
 	);
 };

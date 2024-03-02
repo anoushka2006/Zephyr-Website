@@ -89,3 +89,32 @@ export const aboutus = {
     description: `Amidst the strides of technological progress, Zephyr emerges as a breath of fresh air, dedicated to elevating not just material prosperity but also the often-neglected realm of mental well-being. With a passion for fostering awareness, we envision a world resonating with positivity, vitality, and contentment. 
 Brace yourself for an array of soul-stirring events – from uproarious stand-up comedy to the therapeutic strokes of an art workshop, engaging panel discussions, and electrifying music and dance competitions. Join us in sculpting an environment where minds flourish, embracing new experiences and igniting the biological alchemy of lasting mental health.`,
 };
+
+export const guestSpeaker1 = {
+    title: "Vandana Ravinder",
+    description: `
+    Experienced Biotechnologist and proud Founder of Maya and Mommy, specializing in groundbreaking cancer research and development. 
+    Dedicated to promoting natural skincare through our vibrant community, emphasizing sustainability, safety, and authenticity in beauty.
+    Passionate about hosting engaging workshops on traditional beauty remedies, fostering an enriching learning experience. 
+    Beyond the lab, I find joy in the adventures of parenthood, indulging in enriching reads, and crafting exquisite skincare formulations.
+    Join us on our journey to unlock the secrets of radiant, healthy skin!`
+    }
+
+
+export const guestSpeaker2 = {
+    title: "Ahana Ahuja",
+    description: `Founder and CEO @Amplify with Aarti
+Leadership Cultivator
+Corporate and Soft Skills Trainer
+Internationally Certified Life Amplification Coach
+LinkedIn Brand Strategist
+DEI Expert, and Sexuality Educator.
+With over 24 +years of rich experience, Aarti has made a significant impact in the realm of personal and professional development. As the Founder and CEO of Amplify with Aarti, she has nurtured a culture of growth and empowerment within her organization.
+She is a top voice on LinkedIn, and recently her work has been featured in Times Square, New York. 
+Aarti's charisma and engaging approach inspire others to push their boundaries and become the best versions of themselves. With her guidance, countless individuals and organizations have experienced transformational growth and success.`
+}
+
+export const guestSpeaker3 = {
+    title: "Mayusha Reddy ",
+    description: `A multi-talented individual, she excels as an emcee, open forum moderator, novel editor, psychology student, Reiki healer, forgiveness life coach, podcaster, distinguished toastmaster, Carnatic vocalist, and artist. Her impressive list of accomplishments includes 28 awards, 3 Golden Gavel awards, with 5 flourishing happy clubs attesting to her dedication and success.`
+}

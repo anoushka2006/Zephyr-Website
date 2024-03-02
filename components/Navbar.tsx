@@ -95,10 +95,10 @@ const Navbar = () => {
           About Us
         </p>
         <div
-          // onClick={() => { window.open("https://events.tisb.org/zephyr/", "_blank") }}
+          onClick={() => { window.open("https://1drv.ms/b/s!Aq1ItQ904t0xhUa_ZdeMQPY1DNzl?e=w89iAg", "_blank") }}
           className="hidden sm:block px-6 py-2 mr-8 rounded-full cursor-pointer sm:mr-12 bg-gradient-to-b from-gradientTop to-gradientBottom"
         >
-          Registrations Closed!
+          Code of Conduct
         </div>
       </div>
     </div>
