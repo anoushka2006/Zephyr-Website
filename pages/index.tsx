@@ -268,7 +268,7 @@ https://www.instagram.com/pithon.tisb?utm_source=ig_web_button_share_sheet&igsh=
 							About Us
 						</h1>
 						<div className="flex flex-col items-start justify-center w-full h-auto gap-4 ">
-							<MainEvent {...aboutus} image='./images/Logo 2.jpg' />
+							<MainEvent {...aboutus} image='./images/Logo 2 bg.png' />
 						</div>
 					</div>
 				</div>

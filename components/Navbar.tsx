@@ -13,7 +13,7 @@ const Navbar = () => {
         className="ml-4 cursor-pointer h-full"
         style={{ maxWidth: '100%', maxHeight: '100%' }}
         onClick={async () => {
-          router.pathname !== "/index" && (await router.push("/index"));
+          router.pathname !== "/" && (await router.push("/"));
           document.body.scrollIntoView({ behavior: "smooth", block: "start" });
         }}
       />
