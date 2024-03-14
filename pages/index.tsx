@@ -257,10 +257,7 @@ https://www.instagram.com/pithon.tisb?utm_source=ig_web_button_share_sheet&igsh=
 						</h1>
 						<div className="flex flex-col items-start justify-center w-full h-auto gap-4">
 
-							<MainEvent title={rules.title} description={rules.description} image='./images/speaker1.jpg' />
-							<MainEvent title={guestSpeaker2.title} description={guestSpeaker2.description} image='./images/Ahuja.jpg' />
-
-							<MainEvent title={guestSpeaker3.title} description={guestSpeaker3.description} image='./images/speaker3.jpg' />
+							<MainEvent title={rules.title} description={rules.description} image='./images/Rules Bg.png' />
 						</div>
 					</div>
 				</div>

@@ -88,7 +88,7 @@ jnaman@tisb.ac.in
 jmishant@tisb.ac.in 
 maarushi@tisb.ac.in
 
-Instagram ID:
+Instagram ID: 
     `,
 };
 
