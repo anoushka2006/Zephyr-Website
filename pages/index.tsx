@@ -86,7 +86,7 @@ https://www.instagram.com/pithon.tisb?utm_source=ig_web_button_share_sheet&igsh=
 	return (
 		<>
 			<Head>
-				<title>π-THON'24</title>
+				<title>{"π-THON'24"}</title>
 				<meta name="description" content="TISBZephyr" />
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="./images/Logo 2.jpg" />
@@ -102,7 +102,7 @@ https://www.instagram.com/pithon.tisb?utm_source=ig_web_button_share_sheet&igsh=
 						// className="w-full h-[82%] mb-[4%] sm:h-[54%] sm:mb-[1%] flex flex-col justify-center items-center rounded-[2rem] grayscale-[50%] bg-cover"
 						>
 							<h1 className="text-4xl font-bold text-white sm:text-7xl">
-								π-THON'24
+                          {"π-THON'24"}
 							</h1>
 							{/* <h3 className="text-2xl font-medium text-white sm:text-5xl mt-2" style={{ color: '#173012' }}> */}
 							<h3 className="text-2xl font-medium  text-white sm:text-5xl mt-2 color-#173012">
