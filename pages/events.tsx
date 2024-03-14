@@ -25,9 +25,6 @@ const EventsSection: React.FC = () => {
                         <div className="flex flex-col items-start justify-center w-full h-auto gap-4">
                             <MainEvent title={event1.title} description={event1.description} image='./images/dance.jpg' />
                             <MainEvent title={event2.title} description={event2.description} image='./images/music.jpg' />
-                            <MainEvent title={event3.title} description={event3.description} image='./images/comic.jpeg' />
-                            <MainEvent title={event4.title} description={event4.description} image='./images/standup.png' />
-                            <MainEvent title={event5.title} description={event5.description} image='./images/poetry.jpg' />
                         </div>
                     </div>
                 </div>

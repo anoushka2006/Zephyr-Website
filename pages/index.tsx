@@ -9,81 +9,87 @@ import FAQ, { FAQEnum, FAQProps } from "@/components/FAQ";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 import router from "next/router";
 import Theme from "@/components/Theme";
-import { aboutus, event1, event2, event3, event4, event5, guestSpeaker1, guestSpeaker2, guestSpeaker3 } from "../components/MainEventtexxt"; // Assuming you have a component named MainEvent
+import { aboutus, event1, event2, event3, event4, event5, rules, guestSpeaker2, guestSpeaker3 } from "../components/MainEventtexxt"; // Assuming you have a component named MainEvent
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-	// const faqs: FAQProps[] = [
-	// 	{
-	// 		faqVal: FAQEnum.Q1,
-	// 		question: "What are the benefits of participating?",
-	// 		answer:
-	// 			"Learn new skills, add a nation-wide event to your Resume, network with the best programmers in India, and win cash prizes worth Rs. 100,000. All while meeting great people, having great food, and having great fun!",
-	// 	},
-	// 	{
-	// 		faqVal: FAQEnum.Q2,
-	// 		question: "Is there support available?",
-	// 		answer:
-	// 			"The environment at these events is designed specifically to encourage everyone to have fun and help each other. If you’re ever stuck on anything, speak to a volunteer or a HOD who will help you. The primary purpose of the hackathon is to learn, so don’t be afraid to ask!",
-	// 	},
-	// 	{
-	// 		faqVal: FAQEnum.Q3,
-	// 		question: "Do you need coding experience to participate?",
-	// 		answer:
-	// 			"No! If you’re new to programming, feel free to participate in the UI Development Category.",
-	// 	},
-	// 	{
-	// 		faqVal: FAQEnum.Q4,
-	// 		question: "Is the hackathon open to anyone?",
-	// 		answer:
-	// 			"We have two categories; one for ages 10-13 and another for ages 13-18.",
-	// 	},
-	// 	{
-	// 		faqVal: FAQEnum.Q6,
-	// 		question:
-	// 			"I have another question that is not answered in your FAQs, what should I do?",
-	// 		answer: "Please contact us at zephyr@tisb.ac.in for further queries.",
-	// 	},
-	// 	{
-	// 		faqVal: FAQEnum.Q7,
-	// 		question: "What about confidentiality of information?",
-	// 		answer:
-	// 			"If you don’t want to distribute your code base that is ok, if you don’t want to present your project, then a hackathon might not be the ideal place for you to work on that idea. We will take photos at the event and you will sign a document that allows us to use those pictures for social media. So if you don’t want to be on any pictures please tell us beforehand!",
-	// 	},
-	// 	{
-	// 		faqVal: FAQEnum.Q8,
-	// 		question: "Do all team members need to be present?",
-	// 		answer:
-	// 			"Yes, every team member should be present. If a team member cannot be present during the pitch or can only come later please tell us and we will find a way to manage!",
-	// 	},
-	// 	{
-	// 		faqVal: FAQEnum.Q9,
-	// 		question: "What is the Program/Timetable?",
-	// 		answer: "The schedule of events will be announced soon!",
-	// 	},
-	// 	{
-	// 		faqVal: FAQEnum.Q13,
-	// 		question: "How are the winners selected?",
-	// 		answer: (
-	// 			<>
-	// 				There will be an independent Jury comprised of experienced judges
-	// 				selecting the winners with a rating system. The judging criteria will
-	// 				be shared soon!
-	// 			</>
-	// 		),
-	// 	},
-	// ];
+	const faqs: FAQProps[] = [
+		{
+			faqVal: FAQEnum.Q1,
+			question: "How can you contact us?",
+			answer:
+				`CONTACT US 
+Email ID: 
+pi-thon@tisb.ac.in 
+jnaman@tisb.ac.in jmishant@tisb.ac.in maarushi@tisb.ac.in
+
+Instagram ID:
+https://www.instagram.com/pithon.tisb?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==`
+		},
+		{
+			faqVal: FAQEnum.Q2,
+			question: "Is there support available?",
+			answer:
+				"The environment at these events is designed specifically to encourage everyone to have fun and help each other. If you’re ever stuck on anything, speak to a volunteer or a HOD who will help you. The primary purpose of the hackathon is to learn, so don’t be afraid to ask!",
+		},
+		{
+			faqVal: FAQEnum.Q3,
+			question: "Do you need coding experience to participate?",
+			answer:
+				"No! If you’re new to programming, feel free to participate in the UI Development Category.",
+		},
+		{
+			faqVal: FAQEnum.Q4,
+			question: "Is the hackathon open to anyone?",
+			answer:
+				"We have two categories; one for ages 10-13 and another for ages 13-18.",
+		},
+		{
+			faqVal: FAQEnum.Q6,
+			question:
+				"I have another question that is not answered in your FAQs, what should I do?",
+			answer: "Please contact us at zephyr@tisb.ac.in for further queries.",
+		},
+		{
+			faqVal: FAQEnum.Q7,
+			question: "What about confidentiality of information?",
+			answer:
+				"If you don’t want to distribute your code base that is ok, if you don’t want to present your project, then a hackathon might not be the ideal place for you to work on that idea. We will take photos at the event and you will sign a document that allows us to use those pictures for social media. So if you don’t want to be on any pictures please tell us beforehand!",
+		},
+		{
+			faqVal: FAQEnum.Q8,
+			question: "Do all team members need to be present?",
+			answer:
+				"Yes, every team member should be present. If a team member cannot be present during the pitch or can only come later please tell us and we will find a way to manage!",
+		},
+		{
+			faqVal: FAQEnum.Q9,
+			question: "What is the Program/Timetable?",
+			answer: "The schedule of events will be announced soon!",
+		},
+		{
+			faqVal: FAQEnum.Q13,
+			question: "How are the winners selected?",
+			answer: (
+				<>
+					There will be an independent Jury comprised of experienced judges
+					selecting the winners with a rating system. The judging criteria will
+					be shared soon!
+				</>
+			),
+		},
+	];
 
 	const [faq, setFaq] = useState<FAQEnum>(FAQEnum.NONE);
 
 	return (
 		<>
 			<Head>
-				<title>TISBZephyr</title>
+				<title>π-THON'24</title>
 				<meta name="description" content="TISBZephyr" />
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
-				<link rel="icon" href="./images/zephyr logo.png" />
+				<link rel="icon" href="./images/Logo 2.jpg" />
 			</Head>
 			<div className="w-screen h-full bg-primary">
 				<Navbar />
@@ -91,15 +97,19 @@ export default function Home() {
 				<div className="flex items-start justify-center w-full h-full">
 					<div className="flex flex-col items-center justify-start w-full h-[87vh] mt-[13vh] mx-6 sm:mx-8">
 						<div
-							style={{ backgroundImage: 'url("./images/Venomous Jungle.jpeg")' }}
+							style={{ backgroundImage: 'url("./images/Background.png")' }}
 							className="flex justify-center items-center flex-col w-full h-[97%] bg-cover rounded-[2rem] grayscale-[60%]"
 						// className="w-full h-[82%] mb-[4%] sm:h-[54%] sm:mb-[1%] flex flex-col justify-center items-center rounded-[2rem] grayscale-[50%] bg-cover"
 						>
 							<h1 className="text-4xl font-bold text-white sm:text-7xl">
-								ZEPHYR
+								π-THON'24
 							</h1>
-							<h3 className="flex items-center justify-center my-4 text-xl font-semibold text-white sm:text-2xl">
-								March 2nd
+							{/* <h3 className="text-2xl font-medium text-white sm:text-5xl mt-2" style={{ color: '#173012' }}> */}
+							<h3 className="text-2xl font-medium  text-white sm:text-5xl mt-2 color-#173012">
+								EMBRACE THE CIRCLE OF KNOWLEDGE
+							</h3>
+							<h3 className="flex items-center justify-center my-4 text-xl font-bold text-white sm:text-2xl">
+								March 23rd
 							</h3>
 							<motion.button
 								whileHover={{ scale: 1.03 }}
@@ -112,10 +122,10 @@ export default function Home() {
 										block: "start",
 									});
 								}}
-								// onClickCapture={() => window.open("https://events.tisb.org/zephyr/", "_blank")}
+								onClickCapture={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdaHwFhU7MMPco_pSo0kKJ-9Z9NctOwblbP5yjoKhV69w4L4Q/viewform?usp=sharing", "_blank")}
 								className="flex flex-wrap w-[80%] sm:w-auto text-black items-center justify-center px-10 py-2 mt-2 text-xl brightness-[1.2] font-semibold bg-white sm:bg-gradient-to-br from-[#87CEEB] to-[#5F9EA0] rounded-3xl sm:rounded-full cursor-pointer"
 							>
-								Registrations Closed!
+								Registrations Open!
 							</motion.button>
 						</div>
 
@@ -168,7 +178,7 @@ export default function Home() {
 				</div> */}
 
 				{/* Themes */}
-				<div className="relative bottom-16" id="themes"></div>
+				{/* <div className="relative bottom-16" id="themes"></div>
 				<div className="sm:flex w-screen h-auto bg-primary mt-16 hidden">
 					<div className="flex flex-col items-center justify-center w-full h-auto px-6 sm:px-8">
 						<h1 className="w-full mb-8 text-6xl font-semibold text-left">
@@ -193,7 +203,8 @@ export default function Home() {
 							/>
 						</div>
 					</div>
-				</div>
+				</div> */}
+
 
 				<div className="relative bottom-20" id="prizes"></div>
 				<div className="flex w-screen h-auto mt-16 bg-primary">
@@ -209,7 +220,8 @@ export default function Home() {
 								className="flex flex-col items-center justify-start w-full pt-4 pb-8 px-8 bg-gray rounded-[2rem] h-auto sm:min-h-[13rem]"
 							>
 								<h2 className="mb-8 text-3xl font-semibold text-center">
-									Senior Category (Grades 9 - 12)
+									Junior Category (Grades 6-8)
+
 								</h2>
 								<div className="flex flex-col items-center w-full gap-4">
 									<PrizeElement text="1st Place" prize="₹20,000" />
@@ -224,7 +236,8 @@ export default function Home() {
 								className="flex flex-col items-center justify-start w-full pt-4 pb-8 px-8 bg-gray rounded-[2rem] h-auto sm:min-h-[13rem]"
 							>
 								<h2 className="mb-8 text-3xl font-semibold text-center">
-									Junior Category (Grades 6-8)
+									Senior Category (Grades 9 - 12)
+
 								</h2>
 								<div className="flex flex-col items-center w-full gap-4">
 									<PrizeElement text="1st Place" prize="₹20,000" />
@@ -237,18 +250,18 @@ export default function Home() {
 				</div>
 
 				{/* Guest speaker profiles */}
-				<div className="flex w-screen h-auto bg-primary " id="events">
+				<div className="flex w-screen h-auto bg-primary " id="rules">
 					<div className="flex flex-col items-center justify-center w-full h-auto px-6 sm:px-8 ">
 						<h1 className="w-full mb-8 mt-16 text-6xl font-semibold text-center sm:text-left">
-                            Guest Speakers
-                        </h1>
-						                        <div className="flex flex-col items-start justify-center w-full h-auto gap-4">
+							Rules
+						</h1>
+						<div className="flex flex-col items-start justify-center w-full h-auto gap-4">
 
-						<MainEvent title={guestSpeaker1.title} description={guestSpeaker1.description} image='./images/speaker1.jpg' />
-						<MainEvent title={guestSpeaker2.title} description={guestSpeaker2.description} image='./images/Ahuja.jpg' />
+							<MainEvent title={rules.title} description={rules.description} image='./images/speaker1.jpg' />
+							<MainEvent title={guestSpeaker2.title} description={guestSpeaker2.description} image='./images/Ahuja.jpg' />
 
-						<MainEvent title={guestSpeaker3.title} description={guestSpeaker3.description} image='./images/speaker3.jpg' />
-					</div>
+							<MainEvent title={guestSpeaker3.title} description={guestSpeaker3.description} image='./images/speaker3.jpg' />
+						</div>
 					</div>
 				</div>
 				{/* about us */}
@@ -258,58 +271,7 @@ export default function Home() {
 							About Us
 						</h1>
 						<div className="flex flex-col items-start justify-center w-full h-auto gap-4 ">
-							<MainEvent {...aboutus} image='./images/zephyr_logo.png' />
-						</div>
-					</div>
-				</div>
-
-
-				<h3 className="mt-16 mb-8 text-4xl font-semibold ml-8" id="sponsors">
-					Sponsors
-				</h3>
-
-				<div className="flex flex-col items-start justify-start gap-8 ml-8">
-					<div className="flex flex-col items-start justify-start w-full gap-8 sm:flex-row">
-						<div className="w-52 h-28 bg-white rounded-lg overflow-hidden">
-							<img
-								src="./images/sponsor1.jpg"
-								alt="bren"
-								className="object-cover h-full w-full"
-							/>
-						</div>
-						<div className="w-52 h-28 bg-white rounded-lg overflow-hidden">
-							<img
-								src="./images/sponsor2.jpg"
-								alt="bren"
-								className="object-cover h-full w-full"
-							/>
-						</div>
-					</div>
-					<div className="w-52 h-28 bg-white rounded-lg overflow-hidden">
-						<img
-							src="./images/sponsor3.jpg"
-							alt="bren"
-							className="object-cover h-full w-full"
-						/>
-					</div>
-					<div className="flex items-start justify-start w-full gap-8">
-						<div className="bg-black rounded-lg overflow-hidden">
-							<img
-								src="./images/BRITANNIA LOGO.jpg"
-								alt="OFG"
-								width={152}
-								height={78}
-							// style={{ objectFit: 'contain' }}
-							/>
-						</div>
-						<div className="bg-gray rounded-lg overflow-hidden">
-							<img
-								src="./images/natus.jpg"
-								alt="Talent Folks"
-								width={182}
-								height={78}
-							// style={{ objectFit: 'contain' }}
-							/>
+							<MainEvent {...aboutus} image='./images/Logo 2.jpg' />
 						</div>
 					</div>
 				</div>
@@ -318,8 +280,8 @@ export default function Home() {
 
 
 				{/* FAQs */}
-				{/* <div className="relative bottom-20" id="faqs"></div> */}
-				{/* <div className="flex items-start justify-between w-screen h-auto bg-primary mt-8">
+				<div className="relative bottom-20" id="faqs"></div>
+				<div className="flex items-start justify-between w-screen h-auto bg-primary mt-8">
 					<div className="flex flex-col w-full items-start justify-start p-8">
 						<h1 className="mb-8 text-6xl w-full text-center sm:text-left font-semibold">
 							FAQs
@@ -363,7 +325,7 @@ export default function Home() {
 						</div>
 					</div>
 
-					<div className="flex-col w-[35vw] items-end justify-center hidden sm:flex">
+					{/*	<div className="flex-col w-[35vw] items-end justify-center hidden sm:flex">
 						<img
 							src="/images/secondary_bg.png"
 							className="h-full select-none"
@@ -374,9 +336,9 @@ export default function Home() {
 							className="h-[50vh] w-[35vw] select-none scale-y-[-1]"
 							alt=""
 						/>
-					</div>
-				</div> */}
+					</div>*/}
 
+				</div>
 				<Footer />
 			</div>
 		</>
@@ -449,6 +411,7 @@ const PrizeElement = ({ text, prize }: { text: string; prize: string }) => {
 	);
 };
 
+
 export const MainEvent = ({
 	title,
 	description,
@@ -480,6 +443,7 @@ export const MainEvent = ({
 		</motion.div>
 	);
 };
+
 
 
 export const ImageWithText = ({ imageSrc, text }: { imageSrc: string; text: string }) => {
