@@ -141,7 +141,9 @@ export default function Home() {
 								>
 									Practice Questions
 								</motion.button>
-
+								<h5 className="mt-2">
+									Have queries? Contact dharshit@tisb.ac.in | iaditya@tisb.ac.in
+								</h5>
 							</motion.div>
 
 							<motion.div
@@ -155,12 +157,14 @@ export default function Home() {
 								<motion.button
 									whileHover={{ scale: 1.03 }}
 									transition={{ duration: 0.3 }}
-									onClick={() => window.open("PRACTICE_QUESTIONS_URL", "_blank")}
+									onClick={() => window.open("https://1drv.ms/b/s!Aq1ItQ904t0xhUk0TnsP0xv8p5xT?e=oE6XWn", "_blank")}
 									className="py-4 px-6 text-xl font-semibold bg-green-900 text-white rounded-lg shadow-md hover:bg-green-600 cursor-pointer"
 								>
 									Practice Questions
 								</motion.button>
-
+								<h5 className="mt-2">
+									Have queries? Contact dharshit@tisb.ac.in | iaditya@tisb.ac.in
+								</h5>
 							</motion.div>
 						</div>
 					</div>
