@@ -1,5 +1,5 @@
 export const event1 = {
-    title: "JUNIOR CATEGORY:",
+    title: "JUNIOR CATEGORY: Grades 6-8",
     description: `
 3 MEMBERS IN EACH TEAM
 
@@ -14,7 +14,7 @@ Think fast, present smart, and solve the mystery: compete at π-thon'24!”`,
 };
 
 export const event2 = {
-    title: "SENIOR CATEGORY:",
+    title: "SENIOR CATEGORY: Grades 9-12",
     description: `
 3 MEMBERS IN EACH TEAM
 
@@ -88,7 +88,6 @@ jnaman@tisb.ac.in
 jmishant@tisb.ac.in 
 maarushi@tisb.ac.in
 
-Instagram ID: 
     `,
 };
 

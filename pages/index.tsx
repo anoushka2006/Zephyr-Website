@@ -10,75 +10,58 @@ import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 import router from "next/router";
 import Theme from "@/components/Theme";
 import { aboutus, event1, event2, event3, event4, event5, rules, guestSpeaker2, guestSpeaker3 } from "../components/MainEventtexxt"; // Assuming you have a component named MainEvent
-
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
 	const faqs: FAQProps[] = [
 		{
 			faqVal: FAQEnum.Q1,
-			question: "How can you contact us?",
+			question: "What is Pi-thon'24?",
 			answer:
-				`CONTACT US 
-Email ID: 
-pi-thon@tisb.ac.in 
-jnaman@tisb.ac.in jmishant@tisb.ac.in maarushi@tisb.ac.in
-
-Instagram ID:
-https://www.instagram.com/pithon.tisb?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==`
+				"Pi-thon'24 is an inter-school math competition designed to challenge and engage students in Grades 6-12."
 		},
 		{
 			faqVal: FAQEnum.Q2,
-			question: "Is there support available?",
+			question: "What are the dates and timings of the event?",
 			answer:
-				"The environment at these events is designed specifically to encourage everyone to have fun and help each other. If you’re ever stuck on anything, speak to a volunteer or a HOD who will help you. The primary purpose of the hackathon is to learn, so don’t be afraid to ask!",
+				"The event will be held on the 23rd of March from 7:30 a.m. to 2:30 p.m."
 		},
 		{
 			faqVal: FAQEnum.Q3,
-			question: "Do you need coding experience to participate?",
+			question: "Which grades can participate?",
 			answer:
-				"No! If you’re new to programming, feel free to participate in the UI Development Category.",
+				"Students from Grades 6-12 are eligible to participate. There will be separate competitions for two categories: Grades 6-8 and Grades 9-12."
 		},
 		{
 			faqVal: FAQEnum.Q4,
-			question: "Is the hackathon open to anyone?",
+			question: "Can individual students participate, or do they need to be part of a team?",
 			answer:
-				"We have two categories; one for ages 10-13 and another for ages 13-18.",
+				"Students can only participate in a team of three. No individual participants are allowed."
+		},
+		{
+			faqVal: FAQEnum.Q5,
+			question: "What kind of math problems will be included in the competition?",
+			answer:
+				"The competition will cover a variety of mathematical concepts appropriate for the respective grade levels. You can use the practice sheet given on the website to prepare for the competition."
 		},
 		{
 			faqVal: FAQEnum.Q6,
-			question:
-				"I have another question that is not answered in your FAQs, what should I do?",
-			answer: "Please contact us at zephyr@tisb.ac.in for further queries.",
+			question: "Is there a fee to participate?",
+			answer:
+				"No, there is no registration fee."
 		},
 		{
 			faqVal: FAQEnum.Q7,
-			question: "What about confidentiality of information?",
+			question: "Who can I contact if I have further questions?",
 			answer:
-				"If you don’t want to distribute your code base that is ok, if you don’t want to present your project, then a hackathon might not be the ideal place for you to work on that idea. We will take photos at the event and you will sign a document that allows us to use those pictures for social media. So if you don’t want to be on any pictures please tell us beforehand!",
+				"Please feel free to contact the organizing committee via email: pi-thon@tisb.ac.in."
 		},
 		{
 			faqVal: FAQEnum.Q8,
-			question: "Do all team members need to be present?",
+			question: "What kind of support materials are allowed during the competition?",
 			answer:
-				"Yes, every team member should be present. If a team member cannot be present during the pitch or can only come later please tell us and we will find a way to manage!",
-		},
-		{
-			faqVal: FAQEnum.Q9,
-			question: "What is the Program/Timetable?",
-			answer: "The schedule of events will be announced soon!",
-		},
-		{
-			faqVal: FAQEnum.Q13,
-			question: "How are the winners selected?",
-			answer: (
-				<>
-					There will be an independent Jury comprised of experienced judges
-					selecting the winners with a rating system. The judging criteria will
-					be shared soon!
-				</>
-			),
-		},
+				"No form of technological devices for assistance are allowed. For example, calculators, laptops, etc."
+		}
 	];
 
 	const [faq, setFaq] = useState<FAQEnum>(FAQEnum.NONE);
@@ -102,7 +85,7 @@ https://www.instagram.com/pithon.tisb?utm_source=ig_web_button_share_sheet&igsh=
 						// className="w-full h-[82%] mb-[4%] sm:h-[54%] sm:mb-[1%] flex flex-col justify-center items-center rounded-[2rem] grayscale-[50%] bg-cover"
 						>
 							<h1 className="text-4xl font-bold text-white sm:text-7xl">
-                          {"π-THON'24"}
+								{"π-THON'24"}
 							</h1>
 							{/* <h3 className="text-2xl font-medium text-white sm:text-5xl mt-2" style={{ color: '#173012' }}> */}
 							<h3 className="text-2xl font-medium  text-white sm:text-5xl mt-2 color-#173012">
@@ -129,81 +112,60 @@ https://www.instagram.com/pithon.tisb?utm_source=ig_web_button_share_sheet&igsh=
 							</motion.button>
 						</div>
 
-						{/* Prize Pool */}
-						{/* <div
-              className="flex justify-center items-center w-full h-[12%] mb-[2%] bg-cover rounded-[3rem] grayscale-[50%]"
-              style={{ backgroundImage: 'url("/images/prize_pool.png")' }}
-            >
-              <h3 className="text-3xl font-semibold text-center text-white sm:text-4xl">
-                ₹100,000 in Cash Prizes
-              </h3>
-            </div> */}
 					</div>
 				</div>
-				{/* events */}
-				{/* events */}
-				{/* events */}
-				{/* <div className="w-screen bg-primary mt-16">
+
+				{/* Practice Questoins */}
+				<div className="relative bottom-20" id="practicequestions"></div>
+				<div className="flex w-screen h-auto mt-16 bg-primary">
+					{/* Create a section for the prizes, explaining the prize distribution for the main and mini events */}
 					<div className="flex flex-col items-center justify-center w-full h-auto px-6 sm:px-8">
 						<h1 className="w-full mb-8 text-6xl font-semibold text-center sm:text-left">
-							Events
+							Practice Questions
 						</h1>
-						<div className="mb-8">
-							<MainEvent title={event2.title} description={event2.description} />
-						</div>
+						<div className="flex flex-col sm:flex-row items-start justify-center w-full h-auto gap-4 mb-4 sm:flex-row">
+							<motion.div
+								whileHover={{ scale: 1.015 }}
+								transition={{ duration: 0.3 }}
+								className="flex flex-col items-center justify-start w-full pt-4 pb-8 px-8 bg-gray rounded-[2rem] h-auto sm:min-h-[13rem]"
+							>
+								<h2 className="mb-8 text-3xl font-semibold text-center">
+									Junior Category (Grades 6-8)
 
-						<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full h-auto">
-							<MainEvent title={event1.title} description={event1.description} />
-							<MainEvent title={event3.title} description={event3.description} />
-							<MainEvent title={event4.title} description={event4.description} />
-							<MainEvent title={event5.title} description={event5.description} />
+								</h2>
+								<motion.button
+									whileHover={{ scale: 1.03 }}
+									transition={{ duration: 0.3 }}
+									onClick={() => window.open("https://1drv.ms/b/s!Aq1ItQ904t0xhUjN6KEJcYH5jfNY?e=l5AYzx", "_blank")}
+									className="py-4 px-6 text-xl font-semibold bg-green-900 text-white rounded-lg shadow-md hover:bg-green-600 cursor-pointer"
+								>
+									Practice Questions
+								</motion.button>
+
+							</motion.div>
+
+							<motion.div
+								whileHover={{ scale: 1.015 }}
+								transition={{ duration: 0.3 }}
+								className="flex flex-col items-center justify-start w-full pt-4 pb-8 px-8 bg-gray rounded-[2rem] h-auto sm:min-h-[13rem]"
+							>
+								<h2 className="mb-8 text-3xl font-semibold text-center">
+									Senior Category (Grades 9 - 12)
+								</h2>
+								<motion.button
+									whileHover={{ scale: 1.03 }}
+									transition={{ duration: 0.3 }}
+									onClick={() => window.open("PRACTICE_QUESTIONS_URL", "_blank")}
+									className="py-4 px-6 text-xl font-semibold bg-green-900 text-white rounded-lg shadow-md hover:bg-green-600 cursor-pointer"
+								>
+									Practice Questions
+								</motion.button>
+
+							</motion.div>
 						</div>
 					</div>
-				</div> */}
-				{/* events */}
-				{/* <div className="flex w-screen h-auto bg-primary mt-16" id="events">
-					<div className="flex flex-col items-center justify-center w-full h-auto px-6 sm:px-8">
-						<h1 className="w-full mb-8 text-6xl font-semibold text-center sm:text-left">
-							Events
-						</h1>
-						<div className="flex flex-col items-start justify-center w-full h-auto gap-4 ">
-							<MainEvent title={event1.title} description={event1.description} />
-							<MainEvent title={event2.title} description={event2.description} />
-							<MainEvent title={event3.title} description={event3.description} />
-							<MainEvent title={event4.title} description={event4.description} />
-							<MainEvent title={event5.title} description={event5.description} />
+				</div>
 
-						</div>
-					</div>
-				</div> */}
-
-				{/* Themes */}
-				{/* <div className="relative bottom-16" id="themes"></div>
-				<div className="sm:flex w-screen h-auto bg-primary mt-16 hidden">
-					<div className="flex flex-col items-center justify-center w-full h-auto px-6 sm:px-8">
-						<h1 className="w-full mb-8 text-6xl font-semibold text-left">
-							Events
-						</h1>
-						<div className="flex flex-row items-center justify-center w-full h-72 gap-4">
-							<Theme theme="Make a Move" image='url("./images/dance_resized.jpg")' />
-							<Theme theme="Sounds Good" image='url("./images/music.jpg")' />
-							<Theme
-								theme="Connect 4"
-								image='url("./images/comic_resized.jpeg")'
-							/>
-						</div>
-						<div className="mt-4 flex flex-row items-center justify-center w-full h-72 gap-4">
-							<Theme
-								theme="Take a Stand"
-								image='url("./images/standup.png")'
-							/>
-							<Theme
-								theme="Wellness Verse"
-								image='url("./images/poetry.jpg")'
-							/>
-						</div>
-					</div>
-				</div> */}
 
 
 				<div className="relative bottom-20" id="prizes"></div>
@@ -401,9 +363,9 @@ const WinnerElement = ({
 
 const PrizeElement = ({ text, prize }: { text: string; prize: string }) => {
 	return (
-		<div className="rounded-xl w-[90%] h-14 bg-gray2 px-4 flex items-center justify-between">
+		<div className="rounded-xl w-[90%] h-14 px-4 flex items-center justify-between" style={{ backgroundColor: '#021402' }}>
 			<p className="text-xl">{text}</p>
-			<p className="text-2xl text-zinc-400">Certificates + Goodies</p>
+			<p className="text-2xl text-zinc-400">Cash Prizes TBD</p>
 		</div>
 	);
 };

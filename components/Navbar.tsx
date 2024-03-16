@@ -78,6 +78,19 @@ const Navbar = () => {
         >
           Rules
         </p>
+
+        
+        <p
+          onClick={async () => {
+            router.pathname !== "/#practicequestions" && (await router.push("/#practicequestions"));
+            let element = document.getElementById("rules");
+            element?.scrollIntoView({ behavior: "smooth", block: "start" });
+          }}
+          className="hidden text-white cursor-pointer select-none sm:block"
+        >
+          Questions
+        </p>
+
         <p
           onClick={async () => {
             router.pathname !== "/#prizes" && (await router.push("/#prizes"));
