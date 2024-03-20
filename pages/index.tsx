@@ -141,6 +141,16 @@ export default function Home() {
 								>
 									Practice Questions
 								</motion.button>
+								
+								<motion.button
+									whileHover={{ scale: 1.03 }}
+									transition={{ duration: 0.3 }}
+									onClick={() => window.open("https://1drv.ms/b/s!Aq1ItQ904t0xhUo7FCMU_VWUOj3w?e=p7k6u3", "_blank")}
+									className="py-4 px-6 text-xl font-semibold bg-green-900 text-white rounded-lg shadow-md hover:bg-green-600 cursor-pointer mt-2 "
+									// style={{width:220}}
+								>
+									{`Solutions`}
+								</motion.button>
 								<h5 className="mt-2">
 									Have queries? Contact dharshit@tisb.ac.in | iaditya@tisb.ac.in
 								</h5>
@@ -161,6 +171,16 @@ export default function Home() {
 									className="py-4 px-6 text-xl font-semibold bg-green-900 text-white rounded-lg shadow-md hover:bg-green-600 cursor-pointer"
 								>
 									Practice Questions
+								</motion.button>
+								
+								<motion.button
+									whileHover={{ scale: 1.03 }}
+									transition={{ duration: 0.3 }}
+									onClick={() => window.open("https://1drv.ms/b/s!Aq1ItQ904t0xhUuvYi6xwG2UANot?e=bJTK4v", "_blank")}
+									className="py-4 px-6 text-xl font-semibold bg-green-900 text-white rounded-lg shadow-md hover:bg-green-600 cursor-pointer mt-2 "
+									// style={{width:220}}
+								>
+									{`Solutions`}
 								</motion.button>
 								<h5 className="mt-2">
 									Have queries? Contact dharshit@tisb.ac.in | iaditya@tisb.ac.in
