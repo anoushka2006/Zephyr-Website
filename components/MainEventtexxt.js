@@ -97,13 +97,14 @@ export const rules = {
     title: "RULES",
     description: `
 - No calculators allowed
-- No on-spot registrations. All registrations
-- must be completed ONLINE.
+- No on-spot registrations. 
+- All registrations must be completed ONLINE.
 - Each school can send ANY number of teams per category. 
-- Every team must have 3 MEMBERS Dress Code: School uniform ONLY
+- Every team must have 3 MEMBERS 
+- Dress Code: School uniform ONLY
 - Please carry your school ID card on the day of the event. Participants will NOT be permitted WITHOUT ID.
 - Please arrive at 7:30 AM to complete the registration procedures. 
-- The event will take place from 8 AM - 2 PM
+- The event will take place from 7:30 AM - 2 PM
 
 COMPETE, COLLABORATE, CONQUER AT π-THON'24!`
 }

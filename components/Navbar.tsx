@@ -124,7 +124,7 @@ const Navbar = () => {
          */}
         <p
           onClick={async () => {
-            router.pathname !== "/#aboutus" && (await router.push("/#aboutus"));
+            router.pathname !== "/#schedule" && (await router.push("/#schedule"));
             let element = document.getElementById("aboutus");
             element?.scrollIntoView({ behavior: "smooth", block: "start" });
           }} className="hidden text-white cursor-pointer select-none sm:block"  >
