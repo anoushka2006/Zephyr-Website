@@ -112,7 +112,7 @@ const Navbar = () => {
           FAQs
         </p> */}
 
-
+{/* 
         <p
           onClick={async () => {
             router.pathname !== "/#aboutus" && (await router.push("/#aboutus"));
@@ -121,6 +121,16 @@ const Navbar = () => {
           }} className="hidden text-white cursor-pointer select-none sm:block"  >
           Contact Us
         </p>
+         */}
+        <p
+          onClick={async () => {
+            router.pathname !== "/#aboutus" && (await router.push("/#aboutus"));
+            let element = document.getElementById("aboutus");
+            element?.scrollIntoView({ behavior: "smooth", block: "start" });
+          }} className="hidden text-white cursor-pointer select-none sm:block"  >
+          Schedule
+        </p>
+
         <div
           onClick={() => { window.open("https://docs.google.com/forms/d/e/1FAIpQLSdaHwFhU7MMPco_pSo0kKJ-9Z9NctOwblbP5yjoKhV69w4L4Q/viewform?usp=sharing", "_blank") }}
           className="hidden sm:block px-6 py-2 mr-8 rounded-full cursor-pointer sm:mr-12 bg-gradient-to-b from-gradientTop to-gradientBottom"

@@ -9,7 +9,7 @@ import FAQ, { FAQEnum, FAQProps } from "@/components/FAQ";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 import router from "next/router";
 import Theme from "@/components/Theme";
-import { aboutus, event1, event2, event3, event4, event5, rules, guestSpeaker2, guestSpeaker3 } from "../components/MainEventtexxt"; // Assuming you have a component named MainEvent
+import { aboutus, event1, event2, event3, event4, event5, rules, schedule, guestSpeaker3 } from "../components/MainEventtexxt"; // Assuming you have a component named MainEvent
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -259,6 +259,16 @@ export default function Home() {
 					</div>
 				</div>
 
+				<div className="flex w-screen h-auto bg-primary mt-16" id="schedule">
+					<div className="flex flex-col items-center justify-center w-full h-auto px-6 sm:px-8">
+						<h1 className="w-full mb-8 text-6xl font-semibold text-center sm:text-left">
+							Schedule
+						</h1>
+						<div className="flex flex-col items-start justify-center w-full h-auto gap-4 ">
+							<MainEvent {...schedule} image='./images/Schedule.jpg' />
+						</div>
+					</div>
+				</div>
 
 
 

@@ -109,17 +109,30 @@ COMPETE, COLLABORATE, CONQUER AT π-THON'24!`
 }
 
 
-export const guestSpeaker2 = {
-    title: "Ahana Ahuja",
-    description: `Founder and CEO @Amplify with Aarti
-Leadership Cultivator
-Corporate and Soft Skills Trainer
-Internationally Certified Life Amplification Coach
-LinkedIn Brand Strategist
-DEI Expert, and Sexuality Educator.
-With over 24 + years of rich experience, Aarti has made a significant impact in the realm of personal and professional development.As the Founder and CEO of Amplify with Aarti, she has nurtured a culture of growth and empowerment within her organization.
-She is a top voice on LinkedIn, and recently her work has been featured in Times Square, New York.
-    Aarti's charisma and engaging approach inspire others to push their boundaries and become the best versions of themselves. With her guidance, countless individuals and organizations have experienced transformational growth and success.`
+export const schedule = {
+    title: "Schedule",
+    description: `
+7:30-8:30 :  Registrations – Main Auditorium (North Entrance Desk)
+
+8:30-9:00 :  Opening ceremony – Main Auditorium
+
+9:00-9:45 :  Senior MCQ + Free Response Round | Junior MCQ + Free Response Round
+
+9:45-10:00:  Break
+
+10:00-11:00: Junior exhibition theme announcement & preparation | Relay for seniors
+
+11:0-11:30: Presentation and evaluation of Junior exhibition
+
+11:30-12:15 :Lunch - Main Cafeteria
+
+12:15-1:15 : Seniors final round | Juniors final round
+
+1:15-1:30 :  Break
+
+1:30-2:00:  Prize Distribution & Closing ceremony – Main Auditorium
+
+    `
 }
 
 export const guestSpeaker3 = {
