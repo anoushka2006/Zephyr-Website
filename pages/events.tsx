@@ -9,10 +9,10 @@ const EventsSection: React.FC = () => {
     return (
         <>
             <Head>
-                <title>TISBZephyr</title>
-                <meta name="description" content="TISBZephyr" />
+                <title>TISB π-thon</title>
+                <meta name="description" content="TISB π-thon" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="./images/zephyr logo.png" />
+                <link rel="icon" href="./images/ π-thon logo.png" />
             </Head>
             <div className="w-screen h-full bg-primary" >
                 <Navbar />

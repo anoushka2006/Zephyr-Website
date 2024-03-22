@@ -70,7 +70,7 @@ export default function Home() {
 		<>
 			<Head>
 				<title>{"π-THON'24"}</title>
-				<meta name="description" content="TISBZephyr" />
+				<meta name="description" content="TISB π-thon" />
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="./images/Logo 2.jpg" />
 			</Head>
@@ -298,7 +298,9 @@ export default function Home() {
 						<div className="flex flex-col items-start justify-start gap-8 ml-4 overflow-x-auto">
 							<div className="flex items-start justify-start w-full gap-8">
 								<div className="w-52 h-28 bg-gray rounded-lg flex justify-center items-center text-xl text-zinc-400">
-									TBA
+									<img
+									src="./images/APGuru Logo.jpg"
+									/>
 								</div>
 								<div className="w-52 h-28 bg-gray rounded-lg flex justify-center items-center text-xl text-zinc-400">
 									TBA
