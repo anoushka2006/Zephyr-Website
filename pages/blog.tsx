@@ -5,8 +5,8 @@ const Blog = () => {
   return (
     <>
       <Head>
-        <title>TISB π-thon | Blog</title>
-        <meta name='description' content='TISB π-thon' />
+        <title>TISBZephyr | Blog</title>
+        <meta name='description' content='TISBZephyr' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/logo.png' />
       </Head>

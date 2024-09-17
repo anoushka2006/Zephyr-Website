@@ -8,19 +8,21 @@ const Navbar = () => {
   return (
     <div className="w-full h-[10vh] border-b border-white/[.13] border-solid flex justify-between items-center fixed z-20 bg-primary">
       <img
-        src="./images/Logo 2.png"
+        src="./images/zephyr_logo.png"
         alt="Logo"
-        className="ml-4 cursor-pointer h-full"
-        style={{ maxWidth: '100%', maxHeight: '100%' }}
+        width={100}
+        height={100}
+
+        className="ml-4 cursor-pointer w-30 h-30"
         onClick={async () => {
-          router.pathname !== "/" && (await router.push("/"));
+          router.pathname !== "/index" && (await router.push("/index"));
           document.body.scrollIntoView({ behavior: "smooth", block: "start" });
         }}
       />
       <div className="flex items-center justify-center gap-8">
         <p
           onClick={async () => {
-            router.pathname !== "/" && (await router.push("/"));
+            router.pathname !== "/index" && (await router.push("/index"));
             document.body.scrollIntoView({
               behavior: "smooth",
               block: "start",
@@ -29,16 +31,6 @@ const Navbar = () => {
           className="hidden text-white cursor-pointer select-none sm:block"
         >
           Home
-        </p>
-        <p
-          onClick={async () => {
-            router.pathname !== "/#aboutus" && (await router.push("/#aboutus"));
-            let element = document.getElementById("aboutus");
-            element?.scrollIntoView({ behavior: "smooth", block: "start" });
-          }}
-          className="hidden text-white cursor-pointer select-none sm:block"
-        >
-          About Us
         </p>
         <Link href="/events">
           <p
@@ -63,37 +55,8 @@ const Navbar = () => {
           Themes
         </p> */}
         <p
-          onClick={() => { window.open("https://1drv.ms/b/s!Aq1ItQ904t0xhUdnl_OitLc7zffi?e=ENfJXi", "_blank") }}
-          className="hidden text-white cursor-pointer select-none sm:block"  >
-          Brochure
-        </p>
-
-        <p
           onClick={async () => {
-            router.pathname !== "/#rules" && (await router.push("/#rules"));
-            let element = document.getElementById("rules");
-            element?.scrollIntoView({ behavior: "smooth", block: "start" });
-          }}
-          className="hidden text-white cursor-pointer select-none sm:block"
-        >
-          Rules
-        </p>
-
-        
-        <p
-          onClick={async () => {
-            router.pathname !== "/#practicequestions" && (await router.push("/#practicequestions"));
-            let element = document.getElementById("rules");
-            element?.scrollIntoView({ behavior: "smooth", block: "start" });
-          }}
-          className="hidden text-white cursor-pointer select-none sm:block"
-        >
-          Questions
-        </p>
-
-        <p
-          onClick={async () => {
-            router.pathname !== "/#prizes" && (await router.push("/#prizes"));
+            router.pathname !== "/index#prizes" && (await router.push("/index#prizes"));
             // let element = document.getElementById("prizes");
             // element?.scrollIntoView({ behavior: "smooth", block: "start" });
           }}
@@ -111,31 +74,31 @@ const Navbar = () => {
         >
           FAQs
         </p> */}
-
-{/* 
+        {/* <p
+          onClick={async () => {
+            router.pathname !== "/index" && (await router.push("/index"));
+            let element = document.getElementById("sponsors");
+            element?.scrollIntoView({ behavior: "smooth", block: "start" });
+          }}
+          className="hidden text-white cursor-pointer select-none sm:block"
+        >
+          Sponsors
+        </p> */}
         <p
           onClick={async () => {
-            router.pathname !== "/#aboutus" && (await router.push("/#aboutus"));
+            router.pathname !== "/index#aboutus" && (await router.push("/index#aboutus"));
             let element = document.getElementById("aboutus");
             element?.scrollIntoView({ behavior: "smooth", block: "start" });
-          }} className="hidden text-white cursor-pointer select-none sm:block"  >
-          Contact Us
+          }}
+          className="hidden text-white cursor-pointer select-none sm:block"
+        >
+          About Us
         </p>
-         */}
-        <p
-          onClick={async () => {
-            router.pathname !== "/#schedule" && (await router.push("/#schedule"));
-            let element = document.getElementById("aboutus");
-            element?.scrollIntoView({ behavior: "smooth", block: "start" });
-          }} className="hidden text-white cursor-pointer select-none sm:block"  >
-          Schedule
-        </p>
-
         <div
-          onClick={() => { window.open("https://docs.google.com/forms/d/e/1FAIpQLSdaHwFhU7MMPco_pSo0kKJ-9Z9NctOwblbP5yjoKhV69w4L4Q/viewform?usp=sharing", "_blank") }}
+          onClick={() => { window.open("https://1drv.ms/b/s!Aq1ItQ904t0xhUa_ZdeMQPY1DNzl?e=w89iAg", "_blank") }}
           className="hidden sm:block px-6 py-2 mr-8 rounded-full cursor-pointer sm:mr-12 bg-gradient-to-b from-gradientTop to-gradientBottom"
         >
-          Registrations Open
+          Code of Conduct
         </div>
       </div>
     </div>

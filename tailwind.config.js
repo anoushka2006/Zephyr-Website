@@ -30,7 +30,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#021402',         // Green from the provided palette  -2d440f - 8fa484
+        primary: '#788e7a',         // Green from the provided palette  -2d440f - 8fa484
         secondary: '#02440b',      // Dark green
         tertiary: '#231f20',       // Dark gray
         gray: '#3e4d40',           // Dark greenish gray

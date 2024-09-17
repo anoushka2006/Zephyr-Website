@@ -9,10 +9,10 @@ const EventsSection: React.FC = () => {
     return (
         <>
             <Head>
-                <title>TISB π-thon</title>
-                <meta name="description" content="TISB π-thon" />
+                <title>TISBZephyr</title>
+                <meta name="description" content="TISBZephyr" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="./images/ π-thon logo.png" />
+                <link rel="icon" href="./images/zephyr logo.png" />
             </Head>
             <div className="w-screen h-full bg-primary" >
                 <Navbar />
@@ -23,8 +23,11 @@ const EventsSection: React.FC = () => {
                             Events
                         </h1>
                         <div className="flex flex-col items-start justify-center w-full h-auto gap-4">
-                            <MainEvent title={event1.title} description={event1.description} image='./images/Junior.png' />
-                            <MainEvent title={event2.title} description={event2.description} image='./images/Senior.png' />
+                            <MainEvent title={event1.title} description={event1.description} image='./images/dance.jpg' />
+                            <MainEvent title={event2.title} description={event2.description} image='./images/music.jpg' />
+                            <MainEvent title={event3.title} description={event3.description} image='./images/comic.jpeg' />
+                            <MainEvent title={event4.title} description={event4.description} image='./images/standup.png' />
+                            <MainEvent title={event5.title} description={event5.description} image='./images/poetry.jpg' />
                         </div>
                     </div>
                 </div>

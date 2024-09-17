@@ -1,31 +1,39 @@
 export const event1 = {
-    title: "JUNIOR CATEGORY: Grades 6-8",
-    description: `
-3 MEMBERS IN EACH TEAM
+    title: "Make a Move:",
+    description: `Unleash your rhythm and moves in the electrifying dance competition! Watch as students showcase their
+passion for dance, turning the stage into a mesmerizing display of creativity and expression.  
 
-3 ROUNDS:
-- Round 1 (Speed Math round): The speed-math round tests participants’ mathematical ability under pressure. It consists of 20 MCQs and 5 integer response questions to be answered in a short duration.
+Link your performance to ONE of the below themes: 
+- BREAKING THE BARRIERS: Using dance to challenge stereotypes and promote understanding of mental health issues  
+- INNER STRENGTH AND RESILIENCE: Dances that portray the strength to overcome adversity and bounce back  
+- ARTISTIC EXPRESSIONS: Encouraging participants to use dance as a form of artistic expression to convey emotions related to mental health  
+- TRANSFORMATIVE MOMENTS: Expressing moments of transformation and personal growth through dance. 
 
-- Round 2 (Junior Exhibition): For the Exhibition, teams are given an abstract mathematical concept used in the real world and must make a presentation on the concept and its real-world applications.
+Light up the stage in just 1 round!  
+The performance duration for this round is 5 minutes.  
+A Maximum of 8 participants in one group permitted. 
 
-- Round 3: The final round remains a mystery, to be unveiled on the Event day. For now, you have this hint: “What is an Answer?
-
-Think fast, present smart, and solve the mystery: compete at π-thon'24!”`,
+Participants will be judged on creativity, adherence to the theme, emotional impact, synchronization, and overall presentation.`,
 };
 
 export const event2 = {
-    title: "SENIOR CATEGORY: Grades 9-12",
-    description: `
-3 MEMBERS IN EACH TEAM
+    title: "Sounds Good?",
+    description: `Immerse yourself in the soul-stirring melodies of our music competition. From enchanting vocals to instrumental prowess, witness the diverse talents that promise to captivate your senses and leave you in awe.  
 
-3 ROUNDS:
-- Round 1 (Speed Math round): The speed-math round tests participants’ mathematical ability under pressure. It consists of 20 MCQs and 5 integer response questions to be answered in a short duration.
+Perform a piece of music that is linked to ONE of the below themes: 
+1. Harmony Within: Music that reflects the journey towards inner peace and mental well-being. 
+2. Resilient Rhythms: Inspire resilience through music, express the strength and perseverance required to overcome mental health challenges. 
+3. Mood Mosaics: Explore diverse musical genres to represent different emotions associated with mental health, creating a mosaic of moods through music.   
+4. Mindful Melodies: Music that promotes mindfulness, relaxation, and a sense of calm, contributing to mental well-being.  
+5. Symphony of Support: Emphasize the importance of community and support systems in mental health through compositions that convey solidarity and understanding. 
 
-- Round 2 (Math Relay): This Relay Race will put each member of a team to the test, forcing each participant to solve a math question alone, before passing on the answer to the next teammate.
+Both Pre-existing music and original compositions are welcome. 
+1 round to inspire awe. 
+Performances should not exceed 5 minutes. 
+Maximum number of participants in a single group is 8. 
+Some musical instruments will be provided from the school itself, please state your requirements beforehand. If the instrument is not available, participants will have to bring their own. 
 
-- Round 3: The final round remains a mystery, to be unveiled on the Event day. For now, you have this hint: “What is an Answer?”
-
-Can you crack the code? join π-thon'24 for a thrilling math experience!”`,
+Participants will be judged on creativity, adherence to the theme, emotional impact, technical proficiency, and overall presentation.`,
 };
 
 export const event3 = {
@@ -77,63 +85,33 @@ Participants will be judged on their adherence to the theme, creativity, emotion
 };
 
 export const aboutus = {
-    title: "π-thon'24",
-    description: `The International School of Bangalore (TISB) is extremely proud to announce the first edition of the 𝜋-thon. Eligible for students from grades 6-12, 𝜋-thon is an Inter-School math competition which will be held in-person at the TISB Campus on March 23rd, 2024. In this event, students all over India will be competing with teams of other schools to engage in high-level mathematical problem solving and showcase their mathematical prowess. 𝜋-thon fosters not only a culture of academic excellence, but also ingenious mathematical thinking.
-    There will be a variety of electrifying and ingenious rounds students will be competing in to hone their skills and achieve mathematical glory. We hope to provide a unique and enriching learning experience through engaging and intellectually stimulating problems, allowing students to walk away with a deeper passion for mathematics
-   
-   
-    CONTACT US 
-pi-thon@tisb.ac.in 
-jnaman@tisb.ac.in 
-jmishant@tisb.ac.in 
-maarushi@tisb.ac.in
-
-    `,
+    title: "Zephyr",
+    description: `Amidst the strides of technological progress, Zephyr emerges as a breath of fresh air, dedicated to elevating not just material prosperity but also the often-neglected realm of mental well-being. With a passion for fostering awareness, we envision a world resonating with positivity, vitality, and contentment. 
+Brace yourself for an array of soul-stirring events – from uproarious stand-up comedy to the therapeutic strokes of an art workshop, engaging panel discussions, and electrifying music and dance competitions. Join us in sculpting an environment where minds flourish, embracing new experiences and igniting the biological alchemy of lasting mental health.`,
 };
 
-// https://www.instagram.com/pithon.tisb?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==
-
-export const rules = {
-    title: "RULES",
+export const guestSpeaker1 = {
+    title: "Vandana Ravinder",
     description: `
-- No calculators allowed
-- No on-spot registrations. 
-- All registrations must be completed ONLINE.
-- Each school can send ANY number of teams per category. 
-- Every team must have 3 MEMBERS 
-- Dress Code: School uniform ONLY
-- Please carry your school ID card on the day of the event. Participants will NOT be permitted WITHOUT ID.
-- Please arrive at 7:30 AM to complete the registration procedures. 
-- The event will take place from 7:30 AM - 2 PM
-
-COMPETE, COLLABORATE, CONQUER AT π-THON'24!`
-}
+    Experienced Biotechnologist and proud Founder of Maya and Mommy, specializing in groundbreaking cancer research and development. 
+    Dedicated to promoting natural skincare through our vibrant community, emphasizing sustainability, safety, and authenticity in beauty.
+    Passionate about hosting engaging workshops on traditional beauty remedies, fostering an enriching learning experience. 
+    Beyond the lab, I find joy in the adventures of parenthood, indulging in enriching reads, and crafting exquisite skincare formulations.
+    Join us on our journey to unlock the secrets of radiant, healthy skin!`
+    }
 
 
-export const schedule = {
-    title: "Schedule",
-    description: `
-7:30-8:30 :  Registrations – Main Auditorium (North Entrance Desk)
-
-8:30-9:00 :  Opening ceremony – Main Auditorium
-
-9:00-9:45 :  Senior MCQ + Free Response Round | Junior MCQ + Free Response Round
-
-9:45-10:00:  Break
-
-10:00-11:00: Junior exhibition theme announcement & preparation | Relay for seniors
-
-11:0-11:30: Presentation and evaluation of Junior exhibition
-
-11:30-12:15 :Lunch - Main Cafeteria
-
-12:15-1:15 : Seniors final round | Juniors final round
-
-1:15-1:30 :  Break
-
-1:30-2:00:  Prize Distribution & Closing ceremony – Main Auditorium
-
-    `
+export const guestSpeaker2 = {
+    title: "Ahana Ahuja",
+    description: `Founder and CEO @Amplify with Aarti
+Leadership Cultivator
+Corporate and Soft Skills Trainer
+Internationally Certified Life Amplification Coach
+LinkedIn Brand Strategist
+DEI Expert, and Sexuality Educator.
+With over 24 +years of rich experience, Aarti has made a significant impact in the realm of personal and professional development. As the Founder and CEO of Amplify with Aarti, she has nurtured a culture of growth and empowerment within her organization.
+She is a top voice on LinkedIn, and recently her work has been featured in Times Square, New York. 
+Aarti's charisma and engaging approach inspire others to push their boundaries and become the best versions of themselves. With her guidance, countless individuals and organizations have experienced transformational growth and success.`
 }
 
 export const guestSpeaker3 = {
