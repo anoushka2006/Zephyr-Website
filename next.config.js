@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    // basePath:'/mental-health-website',
+    basePath:'/Zephyr-Website',
     output: 'export',
   reactStrictMode: true,
 }
