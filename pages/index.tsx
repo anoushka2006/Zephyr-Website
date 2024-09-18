@@ -449,6 +449,7 @@ const PrizeElement = ({ text, prize }: { text: string; prize: string }) => {
 	);
 };
 
+
 export const MainEvent = ({
 	title,
 	description,
@@ -480,6 +481,7 @@ export const MainEvent = ({
 		</motion.div>
 	);
 };
+
 
 
 export const ImageWithText = ({ imageSrc, text }: { imageSrc: string; text: string }) => {

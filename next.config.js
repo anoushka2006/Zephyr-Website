@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     // basePath:'/mental-health-website',
-    output: 'standalone',
+    output: 'export',
   reactStrictMode: true,
 }
 
