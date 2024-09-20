@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
-import { Inter } from "@next/font/google";
+// import { Inter } from "@next/font/google";
 import Navbar from "@/components/Navbar";
 import { motion } from "framer-motion";
 import { useState } from "react";
@@ -11,7 +11,7 @@ import router from "next/router";
 import Theme from "@/components/Theme";
 import { aboutus, event1, event2, event3, event4, event5, guestSpeaker1, guestSpeaker2, guestSpeaker3 } from "../components/MainEventtexxt"; // Assuming you have a component named MainEvent
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
 	// const faqs: FAQProps[] = [
